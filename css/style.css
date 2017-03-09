@@ -466,6 +466,7 @@
         position: absolute;
         z-index: 999;
         left: 0;
+		white-space: nowrap;
 		width:auto;
     }
     ul li:hover ul.dropdown{
