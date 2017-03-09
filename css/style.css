@@ -415,31 +415,58 @@
     ul{
         padding: 0;
         list-style: none;
-        background: #f2f2f2;
+       
+		display:inline-block;
     }
     ul li{
+		 float: left;
+    list-style: none;
         display: inline-block;
         position: relative;
         line-height: 14px;
-        text-align: left;
+      
+		 text-align: center;
+    background-color: #800000;
+    margin-right: 0px;
+    width: auto;
+	list-style-type:none;
+   
     }
+	
+	ul li.toplayer{
+		 float: left;
+    list-style: none;
+        display: inline-block;
+        position: relative;
+        line-height: 14px;
+      
+		 text-align: center;
+    background-color: #800000;
+    margin-right: 30px;
+    width: auto;
+	list-style-type:none;
+   
+    }
+	
     ul li a{
         display: block;
         padding: 8px 45px;
-        color: #333;
+       color: #FFFFFF;
         text-decoration: none;
     }
     ul li a:hover{
-        color:#FF0000 !important;
+         color: #000000; !important;
         background: #939393;
+		 text-decoration: none;
     }
     ul li ul.dropdown{
         min-width: 100%; /* Set width of the dropdown */
-        background: #f2f2f2;
+        background: #800000;
         display: none;
         position: absolute;
         z-index: 999;
         left: 0;
+		width:auto;
     }
     ul li:hover ul.dropdown{
         display: block;	/* Display the dropdown */
