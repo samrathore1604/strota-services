@@ -412,21 +412,68 @@
 			}
 
 	/* List */
-
-		ul
-		{
-		}
-
-			ul.default
-			{
-				list-style: disc;
-				padding-left: 1em;
-			}
-			
-				ul.default li
-				{
-					padding-left: 0.5em;
-				}
+    ul{
+        padding: 0;
+        list-style: none;
+       
+		display:inline-block;
+    }
+    ul li{
+		 float: left;
+    list-style: none;
+        display: inline-block;
+        position: relative;
+        line-height: 14px;
+      
+		 text-align: center;
+    background-color: #800000;
+    margin-right: 0px;
+    width: auto;
+	list-style-type:none;
+   
+    }
+	
+	ul li.toplayer{
+		 float: left;
+    list-style: none;
+        display: inline-block;
+        position: relative;
+        line-height: 14px;
+      
+		 text-align: center;
+    background-color: #800000;
+    margin-right: 30px;
+    width: auto;
+	list-style-type:none;
+   
+    }
+	
+    ul li a{
+        display: block;
+        padding: 8px 45px;
+       color: #FFFFFF;
+        text-decoration: none;
+    }
+    ul li a:hover{
+         color: #000000; !important;
+        background: #939393;
+		 text-decoration: none;
+    }
+    ul li ul.dropdown{
+        min-width: 100%; /* Set width of the dropdown */
+        background: #800000;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+		width:auto;
+    }
+    ul li:hover ul.dropdown{
+        display: block;	/* Display the dropdown */
+    }
+    ul li ul.dropdown li{
+        display: block;
+    }
 				
 			ul.contact
 			{
