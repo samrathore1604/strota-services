@@ -439,7 +439,7 @@
         display: inline-block;
         position: relative;
         line-height: 14px;
-      
+      border-radius: 25px;
 		 text-align: center;
     background-color: #800000;
     margin-right: 30px;
@@ -458,6 +458,7 @@
          color: #000000; !important;
         background: #939393;
 		 text-decoration: none;
+		 border-radius: 25px;
     }
     ul li ul.dropdown{
         min-width: 100%; /* Set width of the dropdown */
@@ -470,10 +471,12 @@
 		width:auto;
     }
     ul li:hover ul.dropdown{
-        display: block;	/* Display the dropdown */
+        display: block;	
+		 border-radius: 25px;/* Display the dropdown */
     }
     ul li ul.dropdown li{
         display: block;
+		 border-radius: 25px;
     }
 				
 			ul.contact
